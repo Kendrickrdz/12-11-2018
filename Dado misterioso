@@ -1,0 +1,103 @@
+int azar;
+
+void setup(){
+size(500,500);
+background(0);
+azar = int(random(1,7));
+}
+void draw(){
+misterio();
+}
+void misterio(){
+if(mousePressed){
+  azar = int(random(1,7));
+   
+ if (azar == 1){
+ dado1();
+ }
+  if (azar == 2){
+ dado2();
+ }
+   if (azar == 3){
+ dado3();
+ }
+   if (azar == 4){
+ dado4();
+ }
+   if (azar == 5){
+ dado5();
+ }
+   if (azar == 6){
+ dado6();
+  }
+ }
+ }
+void dado1(){
+  fill(255);
+  rect(50,50,400,400,80,80,80,80);
+  fill(0);
+  ellipse(250,250,40,40);
+}
+
+void dado2(){
+  fill(255);
+  rect(50,50,400,400,80,80,80,80);
+  fill(0);
+  ellipse(150,150,40,40);
+  fill(0);
+  ellipse(350,350,40,40);
+}
+void dado3(){
+  fill(255);
+  rect(50,50,400,400,80,80,80,80);
+  fill(0);
+  ellipse(250,250,40,40);
+  fill(0);
+  ellipse(150,150,40,40);
+  fill(0);
+  ellipse(350,350,40,40);
+}
+void dado4(){
+  fill(255);
+  rect(50,50,400,400,80,80,80,80);
+  fill(0);
+  ellipse(150,150,40,40);
+  fill(0);
+  ellipse(350,350,40,40);
+  fill(0);
+  ellipse(350,150,40,40);
+  fill(0);
+  ellipse(150,350,40,40);
+}
+void dado5(){
+  fill(255);
+  rect(50,50,400,400,80,80,80,80);
+  fill(0);
+  ellipse(250,250,40,40);
+  fill(0);
+  ellipse(150,150,40,40);
+  fill(0);
+  ellipse(350,350,40,40);
+  fill(0);
+  ellipse(350,150,40,40);
+  fill(0);
+  ellipse(150,350,40,40);
+}
+void dado6(){
+  fill(255);
+  rect(50,50,400,400,80,80,80,80);
+  fill(0);
+  ellipse(150,250,40,40);
+  fill(0);
+  ellipse(150,150,40,40);
+  fill(0);
+  ellipse(350,350,40,40);
+  fill(0);
+  ellipse(350,150,40,40);
+  fill(0);
+  ellipse(150,350,40,40);
+  fill(0);
+  ellipse(350,250,40,40);
+  fill(0);
+  ellipse(150,350,40,40);
+}
